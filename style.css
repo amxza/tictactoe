@@ -1,0 +1,48 @@
+/* 1. Center the grid on the screen */
+body {
+    margin: 0;
+    height: 100vh; /* Make the body take up the full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    background-color: #f0f0f0;
+}
+
+/* 2. Create the 3x3 Grid */
+.game-container {
+    display: grid;
+    /* This creates 3 columns of equal width */
+    grid-template-columns: repeat(3, 100px); 
+    /* This creates 3 rows of equal height */
+    grid-template-rows: repeat(3, 100px);    
+}
+
+/* 3. Style the items so you can see them */
+.grid-item {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.grid-item:hover{
+    background-color: tomato;
+}
+
+#startModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
